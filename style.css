@@ -70,6 +70,10 @@ body {
     background-color: rgb(4,4,88,0.1);
 }
 
+#social-div > p {
+    font-size: 1vw;
+}
+
 #name {
     color:rgb(4,4,88);
     font-family: 'Roboto Condensed', sans-serif;
