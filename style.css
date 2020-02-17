@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0px;
+    margin: auto;
 }
 
 /* Containers */
@@ -14,13 +14,15 @@ body {
 
 #text-div {
     order: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #social-div {
     display: flex;
     flex-direction: column;
-    border-color: black;
-    border-style: solid;
+    text-align: center;
 }
 
 #social-icons {
@@ -34,7 +36,8 @@ body {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-items: auto;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Elements */
@@ -49,4 +52,22 @@ body {
     max-height: 32px;
     max-width: 32px;
     vertical-align: middle;
+}
+
+#social-icons > a{
+    color: gray;
+    text-decoration: none;
+}
+
+#name {
+    color: #040458;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+#summary {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2em;
 }
