@@ -24,7 +24,7 @@ body {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -36,7 +36,7 @@ body {
 
 #headshot-div {
     order: 2;
-    padding: 70px;
+    padding: 50px;
 }
 
 #name-div {
@@ -46,6 +46,8 @@ body {
 #social-div {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    align-self: center;
 }
 
 #social-icons {
@@ -53,7 +55,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: baseline;
-    margin: 20px;
+    border-color: rgb(4,4,88);
+    border-style: solid;
 }
 
 .social{
@@ -65,18 +68,13 @@ body {
     margin: 10px;
 }
 
-#social-icons {
-    border-color: rgb(4,4,88);
-    border-style: solid;
-}
-
 /* Elements */
 
 #headshot {
     max-width: 100%;
     max-height: 100%;
-    /* animation-name: fade-in;
-    animation-duration: 1s; */
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 
 .social > img {
@@ -94,14 +92,11 @@ body {
     align-self: center;
 }
 
+
 #social-icons > a{
     color: gray;
     text-decoration: none;
     font-size: 1em;
-}
-
-#social-div > p {
-    align-self: center;
 }
 
 /* Desktop-view code begins here */
@@ -111,49 +106,44 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: auto;
         align-items: center;
     }
     
-    /* Containers */
-
-    /*Mobile only*/
     #banner {
         display: none;
     }
 
     #headshot-div {
         order: 1;
-        /* animation-name: fade-in;
-        animation-duration: 3s; */
+        animation-name: fade-in;
+        animation-duration: 3s;
     }
     
     #text-div {
         order: 2;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         max-width: 65%;
     }
     
     #social-div {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 90%;
+        align-self: flex-start;
     }
     
     #social-icons {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: baseline;
-        border: none;
-        margin: 0px;
+        align-items: center;
+        margin: 20px;
     }
 
     #name-div {
-        display: inline;
+        display: inline-flex;
+        width: 80%;
+        align-self: flex-start;
     }
     
     /* Elements */
@@ -174,17 +164,14 @@ body {
         background-color: rgb(4,4,88,0.1);
     }
     
-    #social-div > p {
-        font-size: 1vw;
-    }
-    
-    #name-div {
+    #name-div > p {
         color:rgb(4,4,88);
         font-family: 'Roboto Condensed', sans-serif;
         font-weight: bold;
-        font-size: 4vw;
-        /* animation-name: slide-up;
-        animation-duration: 2.5s; */
+        font-size: 3vw;
+        margin: 20px;
+        animation-name: slide-up;
+        animation-duration: 2.5s;
     }
     
     #summary-div {
@@ -195,9 +182,13 @@ body {
         max-width: 80%;
         align-self: flex-start;
     }
+
+    .summary-text {
+        margin: 20px;
+    }
 }
 
-/* Animation code
+/* Animation code */
 @keyframes fade-in {
     from {opacity: 0%;}
     to {opacity: 100%;}
@@ -212,4 +203,4 @@ body {
         opacity: 1;
         line-height: 1.6em;
     }
-} */
+}
