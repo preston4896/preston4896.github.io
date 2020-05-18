@@ -20,9 +20,9 @@ body > div{
 
 footer {
     max-height: 30vh;
-    position: fixed;
     bottom: 0;
-    right: 0;
+    padding: 30px;
+    font-size: 1em;
 }
 
 /* Containers */
