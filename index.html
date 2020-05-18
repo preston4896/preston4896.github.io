@@ -10,6 +10,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-158698575-1');
         </script>
+
         <meta charset = "utf-8">
         <link rel = "icon" 
             type = "image/png"
@@ -24,16 +25,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     </head>
 
-    <!-- - Animated background
-    <video autoplay muted loop id="bg">
-        <source src="assets/bg.mp4" type="video/mp4">
-    </video> -->
-
     <body>
-        <nav class = "navbar fixed-top" id = "banner">
-            <p class = "name-text"> Preston Ong 王列圣 </p>
-        </nav>
-        <div class = "container-fluid">
+        <div id = "view1" class = "container-fluid">
+            <!-- - Animated background -->
+            <div class = "fullscreen-bg">
+                <video autoplay muted loop id="bg">
+                    <source src="assets/bg.mp4" type="video/mp4">
+                </video> -->
+            </div>
+            <nav class = "navbar fixed-top" id = "banner">
+                <p class = "name-text"> Preston Ong 王列圣 </p>
+            </nav>
             <div id = "text-div">
                 <div id = "name-div">
                     <p> Preston Liat Sheng Ong 王列圣</p>
@@ -71,6 +73,10 @@
             <div id = "headshot-div">
                 <img id = "headshot" src = "assets/headshot.png", alt = "A really handsome pic of me is unable to load at the moment.">
             </div>
+        </div>
+
+        <div id = "view2">
+            <!-- TODO -->
         </div>
 
         <footer>

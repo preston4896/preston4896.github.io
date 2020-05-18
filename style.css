@@ -2,13 +2,21 @@ body {
     min-height: 100vh;
 }
 
-/* #bg {
+.fullscreen-bg {
     position: fixed;
+    top: 0;
     right: 0;
+    left: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-} */
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 body > div{
     max-width: 100%;
@@ -19,10 +27,11 @@ body > div{
 }
 
 footer {
-    max-height: 30vh;
     bottom: 0;
     padding: 30px;
     font-size: 1em;
+    color:  rgb(4,4,88);
+    background-color:rgba(150, 150, 155, 0.15);
 }
 
 /* Containers */
