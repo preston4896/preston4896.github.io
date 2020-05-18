@@ -28,13 +28,9 @@ footer {
 /* Containers */
 #banner {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     max-height: 100vh;
     background-color: rgb(4,4,88);
-    order: 1;
     justify-content: space-evenly;
 }
 
@@ -47,13 +43,13 @@ footer {
 }
 
 #text-div {
-    order: 3;
+    order: 2;
     display: flex;
     flex-direction: column;
 }
 
 #headshot-div {
-    order: 2;
+    order: 1;
     padding: 50px;
 }
 
