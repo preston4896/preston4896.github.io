@@ -20,22 +20,21 @@
         <link href = "https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel = "stylesheet"> 
         <title> Preston Ong </title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     </head>
 
     <body>
-        <div id = "view1" class = "container-fluid">
+        <nav class = "navbar fixed-top" id = "banner">
+            <p class = "name-text"> Preston Ong 王列圣 </p>
+        </nav>
+        
+        <section id = "view1" class = "container-fluid">
             <!-- - Animated background -->
             <div class = "fullscreen-bg">
                 <video autoplay muted loop id="bg">
                     <source src="assets/bg.mp4" type="video/mp4">
-                </video> -->
+                </video>
             </div>
-            <nav class = "navbar fixed-top" id = "banner">
-                <p class = "name-text"> Preston Ong 王列圣 </p>
-            </nav>
             <div id = "text-div">
                 <div id = "name-div">
                     <p> Preston Liat Sheng Ong 王列圣</p>
@@ -73,15 +72,20 @@
             <div id = "headshot-div">
                 <img id = "headshot" src = "assets/headshot.png", alt = "A really handsome pic of me is unable to load at the moment.">
             </div>
-        </div>
+        </section>
 
-        <div id = "view2">
+        <section id = "view2">
             <!-- TODO -->
-        </div>
+        </section>
 
         <footer>
             <p> &copy; 2020 Copyrights Reserved. This website is protected under <a href = "https://github.com/preston4896/preston4896.github.io/blob/master/LICENSE" target = "_blank"> MIT License </a>. </p>
         </footer>
+
+        <!-- Scroll Magic -->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        
+        <script src = "script.js"></script>
 
     </body>
 
