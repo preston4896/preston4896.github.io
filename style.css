@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
 }
@@ -135,6 +139,10 @@ nav {
 
     nav:hover {
         background-color: rgba(4,4,88,1);
+    }
+
+    #banner {
+        font-size: 20px;
     }
 
     #view1{
