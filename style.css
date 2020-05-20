@@ -129,6 +129,14 @@ nav {
     height: 100vh;
     }
 
+    nav {
+        transition: 0.3s;
+    }
+
+    nav:hover {
+        background-color: rgba(4,4,88,1);
+    }
+
     #view1{
         display: flex;
         flex-direction: row;
