@@ -3,8 +3,17 @@ body {
 }
 
 #view2 {
+    display: flex;
+    flex-direction: column;
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 16%, rgba(9,9,121,1) 96%);
+}
+#bitmoji {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 50px;
+    min-height: 50vh;
 }
 
 section {
@@ -114,7 +123,6 @@ nav {
     align-self: center;
 }
 
-
 #social-icons > a{
     color: gray;
     text-decoration: none;
@@ -144,6 +152,10 @@ nav {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    #view2 {
+        flex-direction: column;
     }
 
     #headshot-div {

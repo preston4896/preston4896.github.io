@@ -1,8 +1,12 @@
 "strict mode";
 
-// scrollMagic code
 var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene();
+
+// var scene1 = new ScrollMagic.Scene({
+//     triggerElement: '#view1'
+// })
+// .setClassToggle('#view1', 'fade-in')
+// .addTo(controller);
 
 // code snippet: https://jsfiddle.net/cse_tushar/Dxtyu/141/
 // The following code enables smooth scrolling and changes navItems' active states.
