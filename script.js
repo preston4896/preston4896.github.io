@@ -4,14 +4,44 @@
 var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene();
 
-// navBar items active status code.
-// Code snippet: https://stackoverflow.com/questions/49530497/how-do-i-make-bootstrap-navbar-change-active-state
-$(document).ready(function() {
-    $( ".ml-auto .nav-item" ).bind( "click", function(event) {
-        var clickedItem = $( this );
-        $( ".ml-auto .nav-item" ).each( function() {
-            $( this ).removeClass( "active" );
+// code snippet: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+// The following code enables smooth scrolling and changes navItems' active states.
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $(".ml-auto .nav-item").each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
         });
-        clickedItem.addClass( "active" );
     });
 });
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#bannerResponsive a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#bannerResponsive ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
