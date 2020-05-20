@@ -48,13 +48,6 @@ nav {
     animation-duration: 0.25s;
 }
 
-#banner {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
 #text-div {
     order: 2;
     display: flex;
@@ -138,8 +131,12 @@ nav {
         background-color: rgba(4,4,88,1);
     }
 
+    .navbar-brand {
+        font-size: 30px;
+    }
+
     #banner {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #view1{
