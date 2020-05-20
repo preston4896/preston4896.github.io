@@ -37,20 +37,15 @@ footer {
     background-color:rgba(150, 150, 155, 0.15);
 }
 
-/* Containers */
-#banner {
-    display: flex;
-    width: 100%;
+nav {
     background-color: rgba(4,4,88,0.75);
-    justify-content: space-evenly;
 }
 
-.name-text {
+#banner {
     color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 #text-div {
@@ -64,8 +59,12 @@ footer {
     padding: 50px;
 }
 
-#name-div {
-    display: none;
+#name-div > p {
+    color:rgba(9,9,121,1);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5vw;
 }
 
 #social-div {
@@ -93,7 +92,6 @@ footer {
     margin: 10px;
 }
 
-/* Elements */
 #headshot {
     max-width: 100%;
     max-height: 100%;
@@ -108,7 +106,7 @@ footer {
 }
 
 #summary-div {
-    font-size: 1em;
+    font-size: 4vw;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.1em;
     line-height: 1.6;
@@ -169,7 +167,6 @@ footer {
         align-self: flex-start;
     }
     
-    /* Elements */
     #headshot {
         max-width: 100%;
         max-height: 100%;
@@ -187,9 +184,6 @@ footer {
     }
     
     #name-div > p {
-        color:rgba(9,9,121,1);
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: bold;
         font-size: 3vw;
         margin: 20px;
         animation-name: slide-up;
