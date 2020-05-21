@@ -15,11 +15,15 @@ body {
 }
 
 #bitmoji {
-    opacity: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    min-height: 50vh;
+    /* opacity: 0; */
+}
+
+#view2-text-parentDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+    text-align: center;
 }
 
 section {
@@ -38,6 +42,7 @@ section {
 }
 
 #bg {
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -49,7 +54,7 @@ footer {
     bottom: 0;
     padding: 30px;
     font-size: 1em;
-    color:  rgba(9,9,121,1);
+    color:  #f2ef91;
     background-color:rgba(150, 150, 155, 0.15);
 }
 
@@ -129,6 +134,11 @@ nav {
     color: gray;
     text-decoration: none;
     font-size: 1em;
+}
+
+#mit {
+    color: #f0c54f;
+    text-decoration: none;
 }
 
 /* Desktop-view code begins here */
@@ -225,6 +235,16 @@ nav {
 
     .summary-text {
         margin: 20px;
+    }
+
+    #bitmoji {
+        float: right;
+    }
+
+    #view2-text-parentDiv {
+        padding-top: 150px;
+        text-align: left;
+        max-width: 80%;
     }
 }
 
