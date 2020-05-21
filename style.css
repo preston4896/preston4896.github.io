@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background: radial-gradient(circle, rgba(2,0,36,1) 16%, rgba(9,9,121,1) 96%);
@@ -12,14 +16,10 @@ body {
 #view2 {
     display: flex;
     flex-direction: column;
-}
-
-#bitmoji {
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 #view2-text-parentDiv {
-    /* opacity: 0; */
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -66,6 +66,11 @@ nav {
 
 .navbar-brand {
     font-size: 20px;
+}
+
+#banner {
+    font-style: bold;
+    color: rgba(256,256,256,1);
 }
 
 #text-div {
@@ -245,6 +250,10 @@ nav {
         padding-top: 150px;
         text-align: left;
         max-width: 80%;
+    }
+
+    #view2-div {
+        padding-top: 50px;
     }
 }
 
