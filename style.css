@@ -16,6 +16,13 @@ body {
 #view2 {
     display: flex;
     flex-direction: column;
+}
+
+#bitmoji {
+    opacity: 0;
+}
+
+#v2-title, #v2-text {
     opacity: 0;
 }
 
@@ -250,10 +257,6 @@ nav {
         padding-top: 150px;
         text-align: left;
         max-width: 80%;
-    }
-
-    #view2-div {
-        padding-top: 50px;
     }
 }
 
