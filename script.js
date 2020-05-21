@@ -2,18 +2,19 @@
 
 const animation1 = gsap.timeline();
 animation1.to('#headshot-div', {
-    duration: 0.5, 
-    y: 150,
+    duration: 1, 
+    y: 300,
     opacity: 0
 });
 animation1.to('#text-div', {
-    duration: 0.5,
-    y: 150,
+    duration: 1,
+    y: 300,
     opacity: 0
 })
 animation1.to('#bg', {
-    duration: 0.75,
-    opacity: 0
+    duration: 1,
+    opacity: 0,
+    ease: "circ.out"
 })
 animation1.to('#view2', {
     duration: 1,
@@ -23,7 +24,8 @@ animation1.to('#view2', {
 const controller = new ScrollMagic.Controller();
 const scene1 = new ScrollMagic.Scene({
     triggerElement: "#view2",
-    duration: 300,
+    duration: 500,
+    triggerHook: 0.25
 })
 .setTween(animation1)
 .setPin("#view2")
