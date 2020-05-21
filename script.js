@@ -1,6 +1,38 @@
 "strict mode";
 
 // TODO: Animate video opacity to zero eventually.
+const animations = gsap.timeline();
+// animations.to('#headshot-div', {
+//     duration: 0.2, 
+//     x: -150,
+//     opacity: 0
+// });
+// animations.to('#text-div', {
+//     duration: 0.2,
+//     x: 150,
+//     opacity: 0
+// })
+animations.to('#bg', {
+    duration: 0.75,
+    opacity: 0
+})
+// // animations.to('#bitmoji', {
+// //     duration: .2,
+// //     opacity: 1
+// // })
+// // animations.to('view2-text-parentDiv', {
+// //     duration: .2,
+// //     opacity: 1
+// // })
+
+const controller = new ScrollMagic.Controller();
+const scene1 = new ScrollMagic.Scene({
+    triggleElement: "#view2",
+    duration: 500,
+})
+.setTween(animations)
+.addIndicators()
+.addTo(controller)
 
 // code snippet: https://jsfiddle.net/cse_tushar/Dxtyu/141/
 // The following code enables smooth-scrolling and navItem active status switching.
