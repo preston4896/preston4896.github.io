@@ -1,15 +1,9 @@
 "strict mode";
 
-var controller = new ScrollMagic.Controller();
-
-// var scene1 = new ScrollMagic.Scene({
-//     triggerElement: '#view1'
-// })
-// .setClassToggle('#view1', 'fade-in')
-// .addTo(controller);
+// TODO: Animate video opacity to zero eventually.
 
 // code snippet: https://jsfiddle.net/cse_tushar/Dxtyu/141/
-// The following code enables smooth scrolling and changes navItems' active states.
+// The following code enables smooth-scrolling and navItem active status switching.
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     

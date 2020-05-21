@@ -1,17 +1,23 @@
 body {
     min-height: 100vh;
+    background: radial-gradient(circle, rgba(2,0,36,1) 16%, rgba(9,9,121,1) 96%);
+}
+
+#view1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #view2 {
     display: flex;
     flex-direction: column;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 16%, rgba(9,9,121,1) 96%);
 }
+
 #bitmoji {
+    opacity: 0;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     padding: 50px;
     min-height: 50vh;
 }
@@ -31,16 +37,12 @@ section {
     z-index: -100;
 }
 
-.fullscreen-bg > video {
+#bg {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-#view1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
 }
 
 footer {
