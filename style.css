@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
 
 #view2 {
@@ -37,24 +38,6 @@ body {
 section {
     min-height: 100vh;
     min-width: 100vw;
-}
-
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-#bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-name: fade-in;
-    animation-duration: 0.5s;
 }
 
 footer {
