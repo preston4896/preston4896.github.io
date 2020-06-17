@@ -1,9 +1,11 @@
 html {
     scroll-behavior: smooth;
+    --color: white;
 }
 
 body {
     min-height: 100vh;
+    background-color: var(--color);
 }
 
 #view1{
