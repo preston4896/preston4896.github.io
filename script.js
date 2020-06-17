@@ -39,35 +39,5 @@ const scene1 = new ScrollMagic.Scene({
 })
 .setTween(animation1)
 .setPin("#view2")
-.addIndicators()
-.addTo(controller)
-
-// // Animation: View 1
-// // define timeline and animation
-// const animation1 = gsap.timeline();
-
-// // move the headshot to the left.
-// animation1.to("#headshot-div", {
-//     duration: 1,
-//     x: -150,
-//     // opacity: 0,
-//     ease: "power4-out"
-// })
-
-// // move the text to the right
-// animation1.to("#text-div", {
-//     duration: 1,
-//     x: 150,
-//     // opacity: 0,
-//     ease: "power4-out"
-// })
-
-// // view 1 controller - bind the animations to the view.
-// const controller1 = new ScrollMagic.Controller();
-// const scene1 = new ScrollMagic.scene({
-//     triggerElement: "#view1"
-// })
-// .setTween(animation1)
-// .setPin("#view1")
 // .addIndicators()
-// .addTo(controller1)
+.addTo(controller)
