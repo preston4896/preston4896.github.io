@@ -37,7 +37,7 @@
                 FB.init({
                     appId: '264479657992287',
                     autoLogAppEvents: true,
-                    xfbml: false,
+                    xfbml: true,
                     version: 'v7.0'
                 });
                 (function (d, s, id) {
@@ -47,6 +47,7 @@
                     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));
+                // FB.CustomerChat.show(shouldShowDialog = false);
             };
         </script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
