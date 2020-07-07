@@ -30,6 +30,20 @@
     </head>
 
     <body>
+
+        <!-- Facebook SDK -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '264479657992287',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v7.0'
+                });
+            };
+        </script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
         <!-- <nav class = "navbar navbar-expand-md fixed-top navbar-dark">
             <div class = "container-fluid d-flex align-items-baseline" id = "banner">
                 <p class = "navbar-brand mx-auto"> PRESTON </p>
@@ -75,7 +89,7 @@
                                 @preston4896
                             </div>
                         </a>
-                        <a href = "https://drive.google.com/file/d/1JJWsa0ZYg_a2sF9OPx6H2K4uaFmwWXL-/view?usp=sharing" target = "_blank">
+                        <a href = "https://drive.google.com/file/d/1aLGJbtzUnqiSS004SBYuDbwXlldBXUxo/view?usp=sharing" target = "_blank">
                             <div class = "social">
                                 <img src = "assets/icons/resume.png" title = "Icon made by Freepik from www.flaticon.com">
                                 My Resume
@@ -114,7 +128,7 @@
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
-        <script src = "script.js"></script>
+        <script src = "animation.js"></script>
 
     </body>
 
