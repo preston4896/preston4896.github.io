@@ -30,27 +30,30 @@
     </head>
 
     <body>
+        
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
 
-        <!-- Facebook SDK -->
-        <script>
-            window.fbAsyncInit = function () {
-                FB.init({
-                    appId: '264479657992287',
-                    autoLogAppEvents: true,
-                    xfbml: true,
-                    version: 'v7.0'
-                });
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-                FB.CustomerChat.show(shouldShowDialog = false);
-            };
-        </script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="102742154818880" theme_color="#0084ff"
+        logged_in_greeting="Hi, my name is PresBot! Would you like to talk to me? :)"
+        logged_out_greeting="Hi, my name is PresBot! Would you like to talk to me? :)">
+    </div>
 
         <!-- <nav class = "navbar navbar-expand-md fixed-top navbar-dark">
             <div class = "container-fluid d-flex align-items-baseline" id = "banner">
@@ -70,9 +73,6 @@
                 </div>
             </div>
         </nav> -->
-
-        <div class="fb-customerchat" page_id="102742154818880">
-        </div>
 
         <section id = "view1" class = "container-fluid">
             <div id = "text-div">
