@@ -12,4 +12,4 @@ This project is still currently under development. Stay tuned for more updates!
 
 3. 5/20/2020 - Bug-heavy. Side glitches when refresh on View 2.
 
-4. 7/6/2020 - Say Hello to PresBot!
+4. ~~7/6/2020 - Say Hello to PresBot!~~  *(temporarily disabled)*
