@@ -44,7 +44,7 @@ footer {
     bottom: 0;
     padding: 30px;
     font-size: 1em;
-    color:  #f2ef91;
+    /* color:  #f2ef91; */
     background-color:rgba(150, 150, 155, 0.15);
 }
 
@@ -136,8 +136,8 @@ nav {
 }
 
 #mit {
-    color: #f0c54f;
-    text-decoration: none;
+    /* color: #f0c54f; */
+    /* text-decoration: none; */
 }
 
 /* Desktop-view code begins here */
