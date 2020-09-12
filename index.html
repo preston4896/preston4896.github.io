@@ -30,52 +30,6 @@
     </head>
 
     <body>
-
-   <!-- - Load Facebook SDK for JavaScript --> -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v8.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="102742154818880" theme_color="#090979"
-        logged_in_greeting="Hi, I am PresBot, also AI Preston! Come talk to me! :)"
-        logged_out_greeting="Hello, visitor! Would you like to talk to me? :)"
-        greeting_dialog_display="fade"
-        greeting_dialog_delay="5">>
-    </div>
-
-        <!-- <nav class = "navbar navbar-expand-md fixed-top navbar-dark">
-            <div class = "container-fluid d-flex align-items-baseline" id = "banner">
-                <p class = "navbar-brand mx-auto"> PRESTON </p>
-                <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" data-target = "#bannerResponsive">
-                    <span class = "navbar-toggler-icon"> </span>
-                </button>
-                <div class = "collapse navbar-collapse" id = "bannerResponsive">
-                    <ul class = "navbar-nav ml-auto">
-                        <li class = "nav-item">
-                            <a class = "nav-link" href = "#view1"> Home </a>
-                        </li>
-                        <li class = "nav-item">
-                            <a class = "nav-link" href = "#view2"> Timeline </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
         <section id = "view1" class = "container-fluid">
             <div id = "text-div">
                 <div id = "name-div">
@@ -90,7 +44,6 @@
                         I want to become a software engineer with the goal of making technology more intuitive and user-friendly for people regardless of their backgrounds. <br>
                         My Area of Interests are: Machine Learning, NLP, iOS/Web Developer and Blockchain. <br>
                         If you would like to get to know me better, please feel free to connect with me on LinkedIn. <br>
-                        Or, try interact with PresBot, an AI version of myself! (Messenger Icon on the bottom right).
                     </p>
                 </div>
                 <div id = "social-div">
