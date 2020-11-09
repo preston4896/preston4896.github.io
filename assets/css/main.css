@@ -83,9 +83,8 @@ input, select, textarea {
 	}
 
 	html {
-		background-color: #313a3d;
+		background-image: linear-gradient(rgba(13, 3, 43), #321f6d);
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -129,13 +128,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		color: rgba(13, 3, 43);
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			color: #321f6d !important;
 			text-decoration: none;
 		}
 
@@ -2657,7 +2656,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cd1a8;
+			background-color: #0d032b;
 			border: 0;
 			box-shadow: none;
 			color: #ffffff !important;
@@ -2668,7 +2667,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9ed8b6;
+				background-color: #321f6d;
 			}
 
 			input[type="submit"].primary:active,
