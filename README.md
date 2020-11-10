@@ -13,3 +13,5 @@ This project is still currently under development. Stay tuned for more updates!
 3. 5/20/2020 - Bug-heavy. Side glitches when refresh on View 2.
 
 4. 11/9/2020 - Major design change.
+
+5. 11/9/2020 - PresBot is embedded on the site.
