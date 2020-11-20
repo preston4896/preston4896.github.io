@@ -158,7 +158,15 @@
                     <li>&copy; 2020. Protected under <a href = "https://github.com/preston4896/preston4896.github.io/blob/master/LICENSE" target = "_blank"> MIT </a> </li>
                     <li>Design: <a href="http://html5up.net" target = "_blank">HTML5 UP</a></li>
                 </ul>
-            </footer>
+			</footer>
+			
+			<!-- Diploma Modal -->
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01" src = "assets/images/UCDiploma.JPG" alt = "#GoAggies">
+				<div id="caption"></div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -168,6 +176,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var link = document.getElementById("bio");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				link.onclick = function(){
+				  modal.style.display = "block";
+				  captionText.innerHTML = modalImg.alt;
+				}
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				  modal.style.display = "none";
+				}
+			</script>
 
 	</body>
 
