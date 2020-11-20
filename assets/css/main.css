@@ -84,6 +84,7 @@ input, select, textarea {
 
 	html {
 		background-image: linear-gradient(rgba(13, 3, 43), #321f6d);
+		/* background-color: rgba(13, 3, 43, 1); */
 		background-attachment: fixed,						fixed;
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
@@ -2868,7 +2869,7 @@ input, select, textarea {
 		} */
 
 		footer {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.8);
 			left: 0;
 			position: absolute;
 			text-align: center;
