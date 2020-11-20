@@ -3140,3 +3140,8 @@ input, select, textarea {
 				}
 
 	}
+
+/* User-customized code. */
+#bio {
+	cursor: pointer;
+}
