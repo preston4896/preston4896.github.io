@@ -1,5 +1,7 @@
 # prestonongis.online Project
 
+![GitHub](https://img.shields.io/github/license/preston4896/preston4896.github.io?color=blue&style=flat-square)
+
 The webpage is now live, click [here](https://prestonongis.online).
 
 This project is still currently under development. Stay tuned for more updates!
