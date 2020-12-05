@@ -1,6 +1,6 @@
 # prestonongis.online Project
 
-![GitHub](https://img.shields.io/github/license/preston4896/preston4896.github.io?color=blue&style=flat-square)
+[![GitHub](https://img.shields.io/github/license/preston4896/preston4896.github.io?color=blue&style=flat-square)](https://github.com/preston4896/preston4896.github.io/blob/master/LICENSE)
 
 The webpage is now live, click [here](https://prestonongis.online).
 
