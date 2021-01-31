@@ -66,7 +66,7 @@
 		<!-- <div class="fb-customerchat"
 			attribution=setup_tool
 			page_id="102742154818880"
-			theme_color="#000000"
+			theme_color="#161987"
 			logged_in_greeting="Hello, let's be friends! Don't be shy to say hi. :)"
 			logged_out_greeting="Hello, let's be friends! Don't be shy to say hi. :)">
 		</div> -->
@@ -195,6 +195,9 @@
 						<h3 class="title-a">
 							Stack
 						</h3>
+						<p class="subtitle-a">
+							These are the most commonly used tools for my projects.
+						</p>
 						<div class="line-mf"></div>
 					</div>
 					<div class = "row d-flex justify-content-center">
@@ -502,39 +505,33 @@
 							  </h5>
 							</div>
 							<div>
-							  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+							  <form>
 								<div class="row">
 								  <div class="col-md-12 mb-3">
 									<div class="form-group">
-									  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-									  <div class="validate"></div>
+									  <input type="text" class="form-control" id="name" placeholder="Your Name" required minlength="1"/>
 									</div>
 								  </div>
 								  <div class="col-md-12 mb-3">
 									<div class="form-group">
-									  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-									  <div class="validate"></div>
+									  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" type = "email" required/>
 									</div>
 								  </div>
 								  <div class="col-md-12 mb-3">
 									<div class="form-group">
-									  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-									  <div class="validate"></div>
+									  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required minlength="1"/>
 									</div>
 								  </div>
 								  <div class="col-md-12">
 									<div class="form-group">
-									  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-									  <div class="validate"></div>
+									  <textarea class="form-control" name="message" rows="5" required minlength="1" placeholder="Message"></textarea>
 									</div>
 								  </div>
 								  <div class="col-md-12 text-center mb-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent. Thank you!</div>
+									<p id = "status"></p>
 								  </div>
 								  <div class="col-md-12 text-center">
-									<button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+									<button class="button button-a button-big button-rouded" id = "submit-btn">Send Message</button>
 								  </div>
 								</div>
 							  </form>
@@ -608,8 +605,9 @@
 		  <script src="assets/vendor/typed.js/typed.min.js"></script>
 		  <script src="assets/vendor/venobox/venobox.min.js"></script>
 		
-		  <!-- Template Main JS File -->
+		  <!-- JS Files -->
 		  <script src="assets/js/main.js"></script>
+		  <script src="assets/js/contact.js"></script>
 	</body>
 
 </html>
