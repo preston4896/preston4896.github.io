@@ -9,22 +9,22 @@ if($_POST) {
     $email_body = "<div>";
       
     if(isset($_POST['name'])) {
-        $visitor_name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
                            <label><b>Visitor Name:</b></label>&nbsp;<span>".$name."</span>
                         </div>";
     }
  
     if(isset($_POST['email'])) {
-        $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
-        $visitor_email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
                            <label><b>Visitor Email:</b></label>&nbsp;<span>".$email."</span>
                         </div>";
     }
       
     if(isset($_POST['subject'])) {
-        $email_title = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+        $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
                            <label><b>Subject:</b></label>&nbsp;<span>".$subject."</span>
                         </div>";
