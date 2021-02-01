@@ -1,5 +1,7 @@
 "use strict";
 
+import {insertMessage} from "./firebase.js";
+
 // submit button event listener
 document.getElementById("submit-btn").addEventListener("click", submit);
 
@@ -18,6 +20,10 @@ function submit() {
 
     if (name.checkValidity() && email.checkValidity() && subject.checkValidity() && message.checkValidity()) {
         document.getElementById("status").innerHTML = `Thank you for your message, ${name.value}! I will get back to you ASAP. 😎`;
+        
+        // insert message to Firebase.
+        insertMessage(name.value, email.value, subject.value, message.value);
+
         name.value = "";
         email.value = "";
         subject.value = "";
