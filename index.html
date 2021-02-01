@@ -1,11 +1,12 @@
 <!doctype HTML>
 <html lang = "en">
 
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!-- =======================================================
+  * Template Name: DevFolio - v3.0.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,23 +18,29 @@
         gtag('config', 'UA-158698575-1');
 		</script>
 		
-		<!-- Facebook Webmasters Configuration for Link Sharing Preview -->
+		<!-- Social Media Link Sharing Preview Configuration -->
 		<meta property="og:title" content="Preston Ong's Website"/>
 		<meta property="og:image" content="http://preston4896.github.io/assets/images/favicon.png"/>
 		<meta property="og:url" content="https://prestonong.com/"/>
 		<meta property="og:description" content="Check out Preston's website to get to know him better."/>
 
         <meta charset = "utf-8">
-        <link rel = "icon" 
-            type = "image/png"
-            href = "assets/images/favicon.png">
+        <link rel = "icon" type = "image/png" href = "assets/images/favicon.png">
         <title> Preston Ong </title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
-		<link rel="stylesheet" href="./assets/css/main.css" />
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+	  
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet">
     </head>
 
-    <body class="is-preload">
+    <body id = "page-top">
 
 		<!-- Load Facebook SDK for JavaScript -->
 		<div id="fb-root"></div>
@@ -44,7 +51,7 @@
 				version          : 'v8.0'
 				});
 			};
-	
+
 			(function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];
 				if (d.getElementById(id)) return;
@@ -54,137 +61,511 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=264479657992287&autoLogAppEvents=1" nonce="f2dYNy98"></script>
-  
+
 		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
+		<!-- <div class="fb-customerchat"
 			attribution=setup_tool
 			page_id="102742154818880"
-			theme_color="#000000"
+			theme_color="#161987"
 			logged_in_greeting="Hello, let's be friends! Don't be shy to say hi. :)"
 			logged_out_greeting="Hello, let's be friends! Don't be shy to say hi. :)">
-		</div>
+		</div> -->
 
-		<!-- Header -->
-			<section id="header">
-				<header class="major">
-					<h1>PRESTON ONG &nbsp;王列圣</h1>
-					<div class = "container-fluid">
-						<div class = "row d-flex justify-content-center align-items-center">
-							<div class="col-sm-3"><p> Aspiring Software Engineer  </p></div>
-							<div class="col-sm-3"><p> <span class="icon brands alt fa-apple"></span> Apple Certified Mac Technician </p></div>
-							<div class="col-sm-3"><p> # GoAggies </p></div>
-						</div>
-					</div>
-				</header>
-				<div class="container">
-					<ul class="actions special">
-						<li><a href="#one" class="button primary scrolly">Begin</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="./assets/images/bg-1a.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>Who I am</h2>
-						</header>
-						<!-- Diploma Modal -->
-						<div id="myModal" class="modal">
-							<span class="close">&times;</span>
-							<img class="modal-content" id="img01" src = "assets/images/UCDiploma.JPG" alt = "#GoAggies">
-							<div id="caption"></div>
-						</div>
-						<p><span class="image left"><img src="./assets/images/headshot.png" alt="" /></span>I was born and raised in a small town of Malacca City, Malaysia. Since childhood, I have grown a passion in technology and computers. I was very fortunate to be given the opportunity to live in California and to enjoy the experience of the Silicon Valley life. I am very grateful for my parents for being able to support and give me this opportunity. <a id ="bio"> I graduated from UC Davis, with a B.S. degree in Computer Science and a minor in economics </a>. Currently, I am actively looking for a full-time role in software engineering. My goal is to make technology more accessible and user-friendly for people regardless of their backgrounds. My area of interests are: (1) Machine Learning, (2) iOS/Web Developer and (3) Blockchain.</p>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="./assets/images/bg-3.JPG" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>Projects</h2>
-						</header>
-						<h3> Click on the icons to view repos and docs to learn more about my projects. </h3>
-						<p> A demo of PresBot can be found at the Messenger Icon on the bottom right corner. </p>
-						<ul class="icons-grid">
-							<li class = "icons-grid-items">
-								<a href = "https://github.com/preston4896/pres_bot", target = "_blank">
-									<span class="icon solid major fa-robot"></span>
-									<h3>PresBot</h3>
-								</a>
-							</li>
-							<li class = "icons-grid-items">
-								<a href = "https://github.com/preston4896/ecs171_pet_adoption", target = "_blank">
-									<span class="icon solid major fa-code"></span>
-									<h3>Pet Adoption Predictor</h3>
-								</a>
-							</li>
-							<li class = "icons-grid-items">
-								<a href = "https://github.com/Sperax/Minecraft-NFT-Server", target = "_blank">
-									<span class="icon solid major brands fa-ethereum"></span>
-									<h3>Minecraft NFT</h3>
-								</a>
-							</li>
-							<li class = "icons-grid-items">
-								<a href = "https://github.com/preston4896/ECTranslator", target = "_blank">
-									<span class="icon solid major fa-globe"></span>
-									<h3>EC Translator</h3>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-		
-		<!-- Three -->
-		<section id="three" class="main special">
+		<!-- ======= Header/ Navbar ======= -->
+		<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
 			<div class="container">
-				<div class="content">
-					<!-- <span class="image fit primary"><img src="./assets/images/bg-3.jpg" alt="" /></span> -->
-					<header class="major">
-						<h2>Fun Things</h2>
-					</header>
-					<p> Aside from being the tech nerd that I am, I enjoy spending time outside to jog or go on a hike. I have also recently picked up interests in cooking and learning French. C'est vrai ! Je fais beaucoup de progrès !</p>
+				<a class="navbar-brand js-scroll" href="#page-top"> PO </a>
+				<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+				</button>
+				<div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link js-scroll active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link js-scroll" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link js-scroll" href="#stack">Stack</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link js-scroll" href="#portfolio">Projects</a>
+					</li>
+					<!-- <li class="nav-item">
+					<a class="nav-link js-scroll" href="#service">Services</a>
+					</li> -->
+					<li class="nav-item">
+					<a class="nav-link js-scroll" href="#contact">Contact</a>
+					</li>
+				</ul>
 				</div>
-				<div class="fb-like" data-href="https://prestonong.com" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+			</div>
+		</nav>
+		
+		<!-- ======= Intro Section ======= -->
+		<div id="home" class="intro route bg-image" style="background-image: url(assets/images/intro_bg.gif)"> <!-- GIF credits to: @butler on Giphy - https://giphy.com/butler/ -->
+		<div class="overlay-itro"></div>
+		<div class="intro-content display-table">
+			<div class="table-cell">
+				<div class="container">
+					<p class="display-6 color-d">Hello, world!</p>
+					<h1 class="intro-title mb-4">I am Preston Ong</h1>
+					<p class="intro-subtitle">I am <span class="text-slider-items">an Aspiring Software Engineer., an Apple Certified Technician., a UC Davis Alumni #GoAggies., excited about tech!, so much more! :)</span><strong class="text-slider"></strong></p>
+					<p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Get To Know Me</a></p>
+				</div>
+			</div>
+		</div>
+		</div><!-- End Intro Section -->
+	
+		<main id="main">
+	
+		<!-- ======= About Section ======= -->
+		<section id="about" class="about-mf sect-pt4 route">
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<div class="box-shadow-full">
+					<div class="title-box-2 text-center">
+						<h5 class="title-left">
+						About me
+						</h5>
+					</div>
+					<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+						<div class="col-sm-6 col-md-5">
+							<div class="about-img">
+							<img src="assets/images/headshot.png" class="img-fluid rounded b-shadow-a" alt="">
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="skill-mf">
+						<p class="title-s">Skills</p>
+						<span>Back End Dev</span> <span class="pull-right"><div> 80% </div></span>
+						<div class="progress">
+							<div class="progress-bar" id = "pb-1" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>Object Oriented Programming</span> <span class="pull-right"><div> 90% </div></span>
+						<div class="progress">
+							<div class="progress-bar" id = "pb-2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>Machine Learning / AI</span> <span class="pull-right"><div> 60% </div></span>
+						<div class="progress">
+							<div class="progress-bar" id = "pb-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>Blockchain Dev</span> <span class="pull-right"><div> 70% </div></span>
+						<div class="progress">
+							<div class="progress-bar" id = "pb-4" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<span>Computer Repair</span> <span class="pull-right"><div> 98% </div></span>
+						<div class="progress">
+							<div class="progress-bar" id = "pb-5" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						</div>
+					</div>
+					<div class="about-me pt-4 pt-md-0">
+						<p class="lead">
+								Being born as a millennial, I grew up in an environment surrounded by computers. After all, I belong in a generation which we were considered as first adopters in the Internet era.
+								I am so fascinated by computers, simply because it is a life-changing technology. The use of computers has significantly transformed from a time when it was considered a luxury to a necessity. It is just as essential as the air we breathe.
+								Having acknowledged the importance of technology is a motivation for me to pursue in a career at software engineering. My goal as a software engineer is to emphasize on user-friendliness, because I believe the tech should learn the users, not the other way around.
+						</p>
+						<p class="lead">
+							I was very fortunate enough to be given the opportunity to experience the Silicon Valley culture with the full support of my parents. For that, I am very grateful.
+							<a href="assets/images/UCDiploma.JPG" data-gall="portfolioGallery" class="venobox"> <u> I graduated from the University of California, Davis, with a B.S. degree in Computer Science and a minor in economics</u></a>. 
+							I certainly had the experiences in college that I consider all priceless. One of the biggest hightlights for me was my commitment to the Blockchain at Davis organization as one of its essential officers.
+							My participation in the club activity allowed me to educate myself in cryptocurrency and its underlying technology, known as blockchain.
+							The successful application of Bitcoin and the huge potential in Ethereum, have revealed a possibly revolutionary career path for me.
+							It is a sign that points me to the direction where I will put my skills into building decentralized applications. Last but not least, as a crypto #HODLER myself, I am riding my way to the moon. 🚀
+						</p>
+						<p class="lead">
+							Aside from being the tech nerd that I am, I enjoy spending time outside to jog or go on a hike. 
+							I have also recently picked up an interest in cooking and learning French. 
+							<strong> C'est vrai ! Je fais beaucoup de progrès ! Comment ça va ? </strong>
+						</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</section><!-- End About Section -->
+
+		<!-- ======= Stack Section ======= -->
+		<section id="stack" class = "services-mf pt-5 route">
+			<div class="container">
+				<div class="title-box text-center">
+					<h3 class="title-a">
+						Stack
+					</h3>
+					<p class="subtitle-a">
+						These are the most commonly used programming languages and/or framework for my projects.
+					</p>
+					<div class="line-mf"></div>
+				</div>
+				<div class = "row d-flex justify-content-center">
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/html-5.svg" alt = "HTML5" class = "img-fluid">
+							<p class = "text-center"> HTML 5 </p>
+						</div>
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/css-3.svg" alt = "CSS3" class = "img-fluid">
+							<p class = "text-center"> CSS 3 </p>
+						</div>					
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/js.svg" alt = "JavaScript" class = "img-fluid">
+							<p class = "text-center"> JavaScript </p>
+						</div>					
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/reactjs.svg" alt = "ReactJS" class = "img-fluid">
+							<p class = "text-center"> ReactJS </p>
+						</div>					
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/Bootstrap.svg" alt = "Bootstrap" class = "img-fluid">
+							<p class = "text-center"> Bootstrap 4 </p>
+						</div>					
+					</div>
+				</div>
+				<div class = "row d-flex justify-content-center">
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/swift.svg" alt = "Swift" class = "img-fluid">
+							<p class = "text-center"> Swift </p>
+						</div>
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/nodejs.svg" alt = "NodeJS" class = "img-fluid">
+							<p class = "text-center"> NodeJS </p>
+						</div>
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/c++.svg" alt = "C++" class = "img-fluid">
+							<p class = "text-center"> C++ </p>
+						</div>					
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/python.svg" alt = "Python" class = "img-fluid">
+							<p class = "text-center"> Python </p>
+						</div>					
+					</div>
+					<div class = "col-sm-2">
+						<div class = "stack-box">
+							<img src = "assets/images/stack/ethereum.svg" alt = "Solidity/Ethereum" class = "img-fluid">
+							<p class = "text-center"> Solidity / Ethereum </p>
+						</div>					
+					</div>
+				</div>
 			</div>
 		</section>
+	
+		<!-- ======= Portfolio Section ======= -->
+		<section id="portfolio" class="portfolio-mf sect-pt4 route">
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<div class="title-box text-center">
+					<h3 class="title-a">
+					Projects
+					</h3>
+					<p class="subtitle-a">
+					These are my personal top 3 projects that I made for school and personal interest.
+					Check out my <a href = "https://github.com/preston4896/" target = "_blank"> GitHub Profile </a> to see all of my projects.
+					</p>
+					<div class="line-mf"></div>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				<div class="work-box">
+					<a href="assets/images/proj/presbot.jpg" data-gall="portfolioGallery" class="venobox">
+					<div class="work-img">
+						<img src="assets/images/proj/presbot.jpg" alt="presbot" class="img-fluid">
+					</div>
+					</a>
+					<div class="work-content">
+					<div class="row">
+						<div class="col-sm-8">
+						<h2 class="w-title">PresBot</h2>
+						<div class="w-more">
+							<span class="w-ctegory">NLP / ML / AI</span> / <span class="w-date">June 2020</span>
+						</div>
+						</div>
+						<div class="col-sm-2">
+						<div class="w-like">
+							<a href="https://github.com/preston4896/pres_bot" target = "_blank"> <span class="ion-ios-plus-outline"></span></a>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="work-box">
+					<a href="assets/images/proj/minecraft.jpg" data-gall="portfolioGallery" class="venobox">
+					<div class="work-img">
+						<img src="assets/images/proj/minecraft.jpg" alt="minecraft" class="img-fluid">
+					</div>
+					</a>
+					<div class="work-content">
+					<div class="row">
+						<div class="col-sm-8">
+						<h2 class="w-title">Minecraft NFT Server</h2>
+						<div class="w-more">
+							<span class="w-ctegory">DeFi / Smart Contract</span> / <span class="w-date">Nov 2020</span>
+						</div>
+						</div>
+						<div class="col-sm-2">
+						<div class="w-like">
+							<a a href="https://github.com/Sperax/Minecraft-NFT-Server" target = "_blank"> <span class="ion-ios-plus-outline"></span></a>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="work-box">
+					<a href="assets/images/proj/code.jpg" data-gall="portfolioGallery" class="venobox">
+					<div class="work-img">
+						<img src="assets/images/proj/code.jpg" alt="code" class="img-fluid">
+					</div>
+					</a>
+					<div class="work-content">
+					<div class="row">
+						<div class="col-sm-8">
+						<h2 class="w-title">Pet Adoption Predictor</h2>
+						<div class="w-more">
+							<span class="w-ctegory">ML</span> / <span class="w-date">Nov 2019</span>
+						</div>
+						</div>
+						<div class="col-sm-2">
+						<div class="w-like">
+							<a href="https://github.com/preston4896/ecs171_pet_adoption" target = "_blank"> <span class="ion-ios-plus-outline"></span></a>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+	
+			</div>
+			</div>
+		</section><!-- End Portfolio Section -->
+	
+		<!-- ======= Services Section ======= -->
+		<!-- <section id="service" class="services-mf pt-5 route">
+			<div class="container">
+				<div class="row">
+				<div class="col-sm-12">
+					<div class="title-box text-center">
+					<h3 class="title-a">
+						Services
+					</h3>
+					<p class="subtitle-a">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					</p>
+					<div class="line-mf"></div>
+					</div>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-4">
+					<div class="service-box">
+					<div class="service-ico">
+						<span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+					</div>
+					<div class="service-content">
+						<h2 class="s-title">Responsive Design</h2>
+						<p class="s-description text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+						provident vitae! Magni
+						tempora perferendis eum non provident.
+						</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-box">
+					<div class="service-ico">
+						<span class="ico-circle"><i class="ion-paintbrush"></i></span>
+					</div>
+					<div class="service-content">
+						<h2 class="s-title">Graphic Design</h2>
+						<p class="s-description text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+						provident vitae! Magni
+						tempora perferendis eum non provident.
+						</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-box">
+					<div class="service-ico">
+						<span class="ico-circle"><i class="ion-stats-bars"></i></span>
+					</div>
+					<div class="service-content">
+						<h2 class="s-title">Marketing Services</h2>
+						<p class="s-description text-center">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+						provident vitae! Magni
+						tempora perferendis eum non provident.
+						</p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</section> -->
+			<!-- End Services Section -->
 
-        <!-- Footer -->
-            <footer id = "footer">
-				<p> CONTACT INFO </p>
-                <ul class="icons">
-                    <li><a href="https://github.com/preston4896" class="icon brands alt fa-github" target = "_blank"></a></li>
-                    <li><a href="https://www.linkedin.com/in/prestonong/" class="icon brands alt fa-linkedin" target = "_blank"></a></li>
-					<li><a href="https://www.facebook.com/prestonong4896" class="icon brands alt fa-facebook-f" target = "_blank"></a></li>
-					<li><a href="https://www.instagram.com/pres_to0no/" class="icon brands alt fa-instagram" target = "_blank"></a></li>
-					<li><a href="mailto:preston4896@me.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					<li><a href="https://app.poap.xyz/scan/0x45c89Ad67a1725541785936841f03D934a018DFE" class="icon brands alt fa-ethereum" target = "_blank"> POAP </a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; 2020 - 2021. Protected under <a href = "https://github.com/preston4896/preston4896.github.io/blob/master/LICENSE" target = "_blank"> MIT </a> </li>
-                    <li>Design: <a href="http://html5up.net" target = "_blank">HTML5 UP</a></li>
-                </ul>
-			</footer>
+		<!-- ======= Contact Section ======= -->
+		<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/images/overlay-bg.jpg)">
+			<div class="overlay-mf"></div>
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<div class="contact-mf">
+					<div id="contact" class="box-shadow-full">
+					<div class="row">
+						<div class="col-md-6">
+						<div class="title-box-2">
+							<h5 class="title-left">
+							Leave A Message
+							</h5>
+						</div>
+						<div>
+							<form action = "assets/forms/contact.php" method = "post">
+							<div class="row">
+								<div class="col-md-12 mb-3">
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required minlength="1"/>
+									<p id = "name-error"></p>
+								</div>
+								</div>
+								<div class="col-md-12 mb-3">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" type = "email" required/>
+									<p id = "email-error"></p>
+								</div>
+								</div>
+								<div class="col-md-12 mb-3">
+								<div class="form-group">
+									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required minlength="1"/>
+									<p id = "subject-error"></p>
+								</div>
+								</div>
+								<div class="col-md-12">
+								<div class="form-group">
+									<textarea class="form-control" name="message" id = "message" rows="5" placeholder="Message" required minlength="1"></textarea>
+									<p id = "message-error"></p>
+								</div>
+								</div>
+								<div class="col-md-12 text-center mb-3">
+								<p id = "status"></p>
+								</div>
+								<div class="col-md-12 text-center">
+								<button type = "button" class="button button-a button-big button-rouded" id = "submit-btn">Send Message</button>
+								</div>
+							</div>
+							</form>
+						</div>
+						</div>
+						<div class="col-md-6">
+						<div class="title-box-2 pt-4 pt-md-0">
+							<h5 class="title-left">
+							Hire Me Maybe?
+							</h5>
+						</div>
+						<div class="more-info">
+							<p class="lead">
+							Despite the unprecedented COVID-19 pandemic, I strive to work resiliently to find opportunites, where I can learn, grow my skills and get professional experience so that I can become a better software engineer.
+							I am interested in working in a full-time position, specifically a role in: (1) full-stack development for web, iOS or Android, (2) machine learning or (3) blockchain and smart contract development.
+							I am also open to freelance work. In other words, if you (or someone you know whom) are in need of help to build your projects, provide tech assistance, teaching/tutoring Computer Science or anything interesting really, please do not hesitate to reach out.
+							Click <a href = "https://drive.google.com/file/d/1WJ6EL8dD_yZ5EoAvkFPxTBW76wkbKE-d/view?usp=sharing" target = "_blank"> <u>here</u></a> to view my resume.
+							</p>
+							<!-- <p class="lead">
+							Also if you haven't already, feel free to check out a demo of PresBot at the Messenger icon on the bottom-right corner.
+							</p> -->
+							<ul class="list-ico">
+							<li><span class="ion-ios-location"></span> Malaysia</li>
+							<li><span class="ion-ios-telephone"></span> <a href = "tel:+60162617168"> +60 16 261-7168 </a> or <a href = "tel:+19162870164"> +1 (916) 287-0164 </a></li>
+							<li><span class="ion-email"></span> <a href="mailto:preston4896@me.com"> preston4896@me.com </a> </li>
+							</ul>
+						</div>
+						<div class="socials">
+							<ul>
+							<li><a href="https://web.facebook.com/prestonong4896/" target = "_blank"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+							<li><a href="https://www.instagram.com/pres_to0no/" target = "_blank"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+							<li><a href="https://github.com/preston4896/" target = "_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+							<li><a href="https://www.linkedin.com/in/prestonong" target = "_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+							</ul>
+						</div>
+						</div>
+						<div class="fb-like" data-href="https://prestonong.com" data-width="5" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</section><!-- End Contact Section -->
+	
+		</main><!-- End #main -->
+	
+		<!-- ======= Footer ======= -->
+		<footer>
+		<div class="container">
+			<div class="row">
+			<div class="col-sm-12">
+				<div class="copyright-box">
+				<p class="copyright">&copy; 2021 All Rights Reserved. Licensed By <a href = "https://github.com/preston4896/preston4896.github.io/blob/master/LICENSE" target = "_blank"> <u> MIT </u> </a></p>
+				<div class="credits">
+					Designed by <a href="https://bootstrapmade.com/", target = "_blank"> <u> BootstrapMade </u></a>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		</footer><!-- End  Footer -->
+	
+		<div id="preloader"></div>
+	
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+		<script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="assets/vendor/typed.js/typed.min.js"></script>
+		<script src="assets/vendor/venobox/venobox.min.js"></script>
+	
+		<!-- Firebase SDK -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+		<script type="module" src="assets/js/firebase.js"></script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/modal.js"></script>
-
+		<!-- JS Files -->
+		<script src="assets/js/main.js"></script>
+		<script type="module" src="assets/js/contact.js"></script>
 	</body>
 
 </html>

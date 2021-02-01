@@ -1,174 +1,130 @@
-/*
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+/**
+* Template Name: DevFolio - v3.0.1
+* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
 */
-
 (function($) {
+  "use strict";
 
-	var	$window = $(window),
-		$body = $('body'),
-		$html = $('html');
+  console.log("%c !!! I see that you are trying to hack my website. Have fun with it but please don't do anything malicious. 😎💻", "color: red; font-size: 48px")
 
-	// Breakpoints.
-		breakpoints({
-			large:   [ '981px',  '1680px' ],
-			medium:  [ '737px',  '980px'  ],
-			small:   [ '481px',  '736px'  ],
-			xsmall:  [ null,     '480px'  ]
-		});
+  var nav = $('nav');
+  var navHeight = nav.outerHeight();
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+  $('.navbar-toggler').on('click', function() {
+    if (!$('#mainNav').hasClass('navbar-reduce')) {
+      $('#mainNav').addClass('navbar-reduce');
+    }
+  })
 
-	// Touch mode.
-		if (browser.mobile) {
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
+  });
 
-			var $wrapper;
+  /*--/ Star ScrollTop /--*/
+  $('.scrolltop-mf').on("click", function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);
+  });
 
-			// Create wrapper.
-				$body.wrapInner('<div id="wrapper" />');
-				$wrapper = $('#wrapper');
+  /*--/ Star Counter /--*/
+  $('.counter').counterUp({
+    delay: 15,
+    time: 2000
+  });
 
-				// Hack: iOS vh bug.
-					if (browser.os == 'ios')
-						$wrapper
-							.css('margin-top', -25)
-							.css('padding-bottom', 25);
+  /*--/ Star Scrolling nav /--*/
+  var mainNav_height = $('#mainNav').outerHeight() - 22;
+  $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        var scrollto = target.offset().top - mainNav_height;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
 
-				// Pass scroll event to window.
-					$wrapper.on('scroll', function() {
-						$window.trigger('scroll');
-					});
+  // Scroll to sections on load with hash links
+  if (window.location.hash) {
+    var initial_nav = window.location.hash;
+    if ($(initial_nav).length) {
+      var scrollto_initial = $(initial_nav).offset().top - mainNav_height;
+      $('html, body').animate({
+        scrollTop: scrollto_initial
+      }, 1000, "easeInOutExpo");
+    }
+  }
 
-			// Scrolly.
-				$window.on('load.hl_scrolly', function() {
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll').on("click", function() {
+    $('.navbar-collapse').collapse('hide');
+  });
 
-					$('.scrolly').scrolly({
-						speed: 1500,
-						parent: $wrapper,
-						pollOnce: true
-					});
+  // Activate scrollspy to add active class to navbar items on scroll
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#mainNav',
+    offset: navHeight
+  });
+  /*--/ End Scrolling nav /--*/
 
-					$window.off('load.hl_scrolly');
+  /*--/ Navbar Menu Reduce /--*/
+  $(window).trigger('scroll');
+  $(window).on('scroll', function() {
+    var pixels = 50;
+    var top = 1200;
+    if ($(window).scrollTop() > pixels) {
+      $('.navbar-expand-md').addClass('navbar-reduce');
+      $('.navbar-expand-md').removeClass('navbar-trans');
+    } else {
+      if (!$('#navbarDefault').hasClass('show')) {
+        $('.navbar-expand-md').removeClass('navbar-reduce');
+      }
+      $('.navbar-expand-md').addClass('navbar-trans');
+    }
+    if ($(window).scrollTop() > top) {
+      $('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
+    } else {
+      $('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
+    }
+  });
 
-				});
+  /*--/ Star Typed /--*/
+  if ($('.text-slider').length == 1) {
+    var typed_strings = $('.text-slider-items').text();
+    var typed = new Typed('.text-slider', {
+      strings: typed_strings.split(','),
+      typeSpeed: 80,
+      loop: true,
+      backDelay: 1100,
+      backSpeed: 30
+    });
+  }
 
-			// Enable touch mode.
-				$html.addClass('is-touch');
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
 
-		}
-		else {
-
-			// Scrolly.
-				$('.scrolly').scrolly({
-					speed: 1500
-				});
-
-		}
-
-	// Header.
-		var $header = $('#header'),
-			$headerTitle = $header.find('header'),
-			$headerContainer = $header.find('.container');
-
-		// Make title fixed.
-			if (!browser.mobile) {
-
-				$window.on('load.hl_headerTitle', function() {
-
-					breakpoints.on('>medium', function() {
-
-						$headerTitle
-							.css('position', 'fixed')
-							.css('height', 'auto')
-							.css('top', '50%')
-							.css('left', '0')
-							.css('width', '100%')
-							.css('margin-top', ($headerTitle.outerHeight() / -2));
-
-					});
-
-					breakpoints.on('<=medium', function() {
-
-						$headerTitle
-							.css('position', '')
-							.css('height', '')
-							.css('top', '')
-							.css('left', '')
-							.css('width', '')
-							.css('margin-top', '');
-
-					});
-
-					$window.off('load.hl_headerTitle');
-
-				});
-
-			}
-
-		// Scrollex.
-			breakpoints.on('>small', function() {
-				$header.scrollex({
-					terminate: function() {
-
-						$headerTitle.css('opacity', '');
-
-					},
-					scroll: function(progress) {
-
-						// Fade out title as user scrolls down.
-							if (progress > 0.5)
-								x = 1 - progress;
-							else
-								x = progress;
-
-							$headerTitle.css('opacity', Math.max(0, Math.min(1, x * 2)));
-
-					}
-				});
-			});
-
-			breakpoints.on('<=small', function() {
-
-				$header.unscrollex();
-
-			});
-
-	// Main sections.
-		$('.main').each(function() {
-
-			var $this = $(this),
-				$primaryImg = $this.find('.image.primary > img'),
-				$bg,
-				options;
-
-			// No primary image? Bail.
-				if ($primaryImg.length == 0)
-					return;
-
-			// Create bg and append it to body.
-				$bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
-					.css('background-image', (
-						'url("assets/css/images/overlay.png"), url("' + $primaryImg.attr('src') + '")'
-					))
-					.appendTo($body);
-
-			// Scrollex.
-				$this.scrollex({
-					mode: 'middle',
-					delay: 200,
-					top: '-10vh',
-					bottom: '-10vh',
-					init: function() { $bg.removeClass('active'); },
-					enter: function() { $bg.addClass('active'); },
-					leave: function() { $bg.removeClass('active'); }
-				});
-
-		});
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function() {
+    $('.venobox').venobox({
+      'share': false
+    });
+  });
 
 })(jQuery);
