@@ -19,6 +19,10 @@ function submit() {
     let messageErr = document.getElementById("message-error");
 
     if (name.checkValidity() && email.checkValidity() && subject.checkValidity() && message.checkValidity()) {
+        nameErr.innerHTML = "";
+        emailErr.innerHTML = "";
+        subjectErr.innerHTML = "";
+        messageErr.innerHTML = "";
         document.getElementById("status").innerHTML = `Thank you for your message, ${name.value}! I will get back to you ASAP. 😎`;
         
         // insert message to Firebase.
@@ -28,10 +32,6 @@ function submit() {
         email.value = "";
         subject.value = "";
         message.value = "";
-        nameErr.value = "";
-        emailErr.value = "";
-        subjectErr.value = "";
-        messageErr.value = "";
     }
     else {
         document.getElementById("status").innerHTML = "";
