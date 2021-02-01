@@ -25,21 +25,6 @@
     }
   });
 
-  // Back to top button
-  // $(window).scroll(function() {
-  //   if ($(this).scrollTop() > 100) {
-  //     $('.back-to-top').fadeIn('slow');
-  //   } else {
-  //     $('.back-to-top').fadeOut('slow');
-  //   }
-  // });
-  // $('.back-to-top').click(function() {
-  //   $('html, body').animate({
-  //     scrollTop: 0
-  //   }, 1500, 'easeInOutExpo');
-  //   return false;
-  // });
-
   /*--/ Star ScrollTop /--*/
   $('.scrolltop-mf').on("click", function() {
     $('html, body').animate({
@@ -124,19 +109,6 @@
       backSpeed: 30
     });
   }
-
-  /*--/ Testimonials owl /--*/
-  // $('#testimonial-mf').owlCarousel({
-  //   margin: 20,
-  //   autoplay: true,
-  //   autoplayTimeout: 4000,
-  //   autoplayHoverPause: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     }
-  //   }
-  // });
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({

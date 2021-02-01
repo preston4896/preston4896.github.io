@@ -790,7 +790,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.service-box {
+/* .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -823,7 +823,7 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
