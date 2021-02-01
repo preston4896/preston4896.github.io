@@ -7,6 +7,8 @@
 (function($) {
   "use strict";
 
+  console.log("%c !!! I see that you are trying to hack my website. Have fun with it but please don't do anything malicious. 😎💻", "color: red; font-size: 48px")
+
   var nav = $('nav');
   var navHeight = nav.outerHeight();
 
