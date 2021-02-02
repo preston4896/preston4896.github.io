@@ -451,39 +451,45 @@
 							</h5>
 						</div>
 						<div>
-							<form action = "https://formsubmit.co/88362a63813fb1d323dede6046a0e25c" method = "POST">
-							<div class="row">
-								<div class="col-md-12 mb-3">
-								<div class="form-group">
-									<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required minlength="1"/>
-									<p id = "name-error"></p>
+							<form target = "_blank" action = "https://formsubmit.co/88362a63813fb1d323dede6046a0e25c" method = "POST">
+								<div class="row">
+									<div class="col-md-12 mb-3">
+									<div class="form-group">
+										<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required minlength="1"/>
+										<p id = "name-error"></p>
+									</div>
+									</div>
+									<div class="col-md-12 mb-3">
+									<div class="form-group">
+										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" type = "email" required/>
+										<p id = "email-error"></p>
+									</div>
+									</div>
+									<div class="col-md-12 mb-3">
+									<div class="form-group">
+										<input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" required minlength="1"/>
+										<p id = "subject-error"></p>
+									</div>
+									</div>
+									<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" name="message" id = "message" rows="5" placeholder="Message" required minlength="1"></textarea>
+										<p id = "message-error"></p>
+									</div>
+									</div>
+									<div class="col-md-12 text-center mb-3">
+										<p id = "status"></p>
+									</div>
+
+									<!-- Form Submit configuration -->
+									<input type="hidden" name="_template" value="table">
+									<input type="text" name="_honey" style="display:none">
+          							<input type="hidden" name="_captcha" value="false">
+
+									<div class="col-md-12 text-center">
+										<input type = "submit" class="button button-a button-big button-rouded" id = "submit-btn" value = "Send Message"></input>
+									</div>
 								</div>
-								</div>
-								<div class="col-md-12 mb-3">
-								<div class="form-group">
-									<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" type = "email" required/>
-									<p id = "email-error"></p>
-								</div>
-								</div>
-								<div class="col-md-12 mb-3">
-								<div class="form-group">
-									<input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" required minlength="1"/>
-									<p id = "subject-error"></p>
-								</div>
-								</div>
-								<div class="col-md-12">
-								<div class="form-group">
-									<textarea class="form-control" name="message" id = "message" rows="5" placeholder="Message" required minlength="1"></textarea>
-									<p id = "message-error"></p>
-								</div>
-								</div>
-								<div class="col-md-12 text-center mb-3">
-									<p id = "status"></p>
-								</div>
-								<div class="col-md-12 text-center">
-									<input type = "submit" class="button button-a button-big button-rouded" id = "submit-btn" value = "Send Message"></input>
-								</div>
-							</div>
 							</form>
 						</div>
 						</div>
