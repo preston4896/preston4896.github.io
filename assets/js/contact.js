@@ -2,8 +2,9 @@
 
 import {insertMessage} from "./firebase.js";
 
-// submit button event listener
-document.getElementById("submit-btn").addEventListener("click", submit);
+// submit event listener
+let contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", submit);
 
 // submit
 function submit() {
