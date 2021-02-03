@@ -35,6 +35,7 @@
 		<link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
 		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 	  
 		<!-- Template Main CSS File -->
 		<link href="assets/css/style.css" rel="stylesheet">
@@ -456,25 +457,21 @@
 									<div class="col-md-12 mb-3">
 									<div class="form-group">
 										<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required minlength="1"/>
-										<p id = "name-error"></p>
 									</div>
 									</div>
 									<div class="col-md-12 mb-3">
 									<div class="form-group">
 										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" type = "email" required/>
-										<p id = "email-error"></p>
 									</div>
 									</div>
 									<div class="col-md-12 mb-3">
 									<div class="form-group">
 										<input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" required minlength="1"/>
-										<p id = "subject-error"></p>
 									</div>
 									</div>
 									<div class="col-md-12">
 									<div class="form-group">
 										<textarea class="form-control" name="message" id = "message" rows="5" placeholder="Message" required minlength="1"></textarea>
-										<p id = "message-error"></p>
 									</div>
 									</div>
 									<div class="col-md-12 text-center mb-3">
@@ -504,7 +501,7 @@
 							<p class="lead">
 							Despite the unprecedented COVID-19 pandemic, I strive to work resiliently to find opportunites, where I can learn, grow my skills and get professional experience so that I can become a better software engineer.
 							I am interested in working in a full-time position, specifically a role in: (1) full-stack development for web, iOS or Android, (2) machine learning or (3) blockchain and smart contract development.
-							I am also open to freelance work. In other words, if you (or someone you know whom) are in need of help to build your projects, provide tech assistance, teaching/tutoring Computer Science or anything interesting really, please do not hesitate to reach out.
+							I am also open to freelance work. In other words, if you (or someone you know whom) are in need of help to build your projects, seeking tech assistance, teaching/tutoring Computer Science or anything interesting really, please do not hesitate to reach out.
 							Click <a href = "https://drive.google.com/file/d/1WJ6EL8dD_yZ5EoAvkFPxTBW76wkbKE-d/view?usp=sharing" target = "_blank"> <u>here</u></a> to view my resume.
 							</p>
 							<!-- <p class="lead">
@@ -550,7 +547,7 @@
 			</div>
 			</div>
 		</div>
-		</footer><!-- End  Footer -->
+		</footer><!-- End Footer -->
 	
 		<div id="preloader"></div>
 	
@@ -563,12 +560,14 @@
 		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 		<script src="assets/vendor/typed.js/typed.min.js"></script>
 		<script src="assets/vendor/venobox/venobox.min.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script> AOS.init(); </script>
 	
 		<!-- Firebase SDK -->
 		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
-		<script type="module" src="assets/js/firebase.js"></script>
+		<script type="module" src="assets/js/db.js"></script>
 
 		<!-- JS Files -->
 		<script src="assets/js/main.js"></script>
