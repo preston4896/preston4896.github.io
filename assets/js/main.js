@@ -36,7 +36,7 @@
 
   /*--/ Star Counter /--*/
   $('.counter').counterUp({
-    delay: 15,
+    delay: 30,
     time: 2000
   });
 
@@ -112,14 +112,6 @@
     });
   }
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox({
@@ -127,4 +119,19 @@
     });
   });
 
+  // Skills section
+  $('#skills').waypoint(function(direction) {
+    // $('.progress .progress-bar').each(function() {
+    //   $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    // });
+    if (direction == "down") {
+      $('.progress-bar').width(function() {
+        return $(this).attr("aria-valuenow") + '%';
+      });
+    } else {
+      $('.progress-bar').width(0);
+    }
+  }, {
+    offset: '80%'
+  });
 })(jQuery);
