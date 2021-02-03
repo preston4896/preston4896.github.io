@@ -43,7 +43,7 @@ function unixTime_to_date_convertor(unix) {
     let year = unixDate.getFullYear();
     let m = unixDate.getMonth();
     let month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    return `${month[m]} + ${year}`;
+    return `${month[m]} ${year}`;
 }
 
 export {insertMessage};
