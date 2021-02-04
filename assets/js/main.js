@@ -121,9 +121,6 @@
 
   // Skills section
   $('#skills').waypoint(function(direction) {
-    // $('.progress .progress-bar').each(function() {
-    //   $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    // });
     if (direction == "down") {
       $('.progress-bar').width(function() {
         return $(this).attr("aria-valuenow") + '%';
