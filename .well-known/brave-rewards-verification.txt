@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: prestonong.com
-Token: 9ea7554d319251b5840852b694fa5942ce6be97aada093243250a3b0c065d0bb
