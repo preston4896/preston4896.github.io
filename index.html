@@ -106,7 +106,7 @@
 		</nav>
 		
 		<!-- ======= Intro Section ======= -->
-		<div id="home" class="intro route bg-image" style="background-image: url(assets/images/intro_bg.gif)"> <!-- GIF credits to: @butler on Giphy - https://giphy.com/butler/ -->
+		<div id="home" class="intro route bg-image" style="background-image: url(assets/images/bg/intro_bg.gif)"> <!-- GIF credits to: @butler on Giphy - https://giphy.com/butler/ -->
 		<div class="overlay-itro"></div>
 		<div class="intro-content display-table">
 			<div class="table-cell">
@@ -195,9 +195,9 @@
 		</section><!-- End About Section -->
 
 		<!-- ======= Stack Section ======= -->
-		<section id="stack" class = "services-mf pt-5 route">
+		<section id="stack" class = "services-mf pt-5 route paralax-mf bg-image" style="background-color: black;">
 			<div class="container">
-				<div class="title-box text-center" data-aos = "fade-up">
+				<!-- <div class="title-box text-center" data-aos = "fade-up">
 					<h3 class="title-a">
 						Stack
 					</h3>
@@ -205,7 +205,7 @@
 						These are the most commonly used programming languages and/or framework for my projects.
 					</p>
 					<div class="line-mf"></div>
-				</div>
+				</div> -->
 				<div class = "row d-flex justify-content-center" data-aos = "fade-up" data-aos-delay = "100">
 					<div class = "col-sm-2">
 						<div class = "stack-box">
@@ -390,17 +390,53 @@
 			</div>
 			</div>
 		</section><!-- End Portfolio Section -->
-	
-		<!-- ======= Resume Section ======= -->
-		<section id="resume" class="services-mf pt-5 route">
+
+		<!-- ======= Blog Section ======= -->
+		<!-- <section id="blog" class="services-mf pt-5 route">
 			<div class="container">
 				<div class="title-box text-center" data-aos = "fade-up">
 					<h3 class="title-a">
-						Resume
+						Blog
 					</h3>
 					<div class="line-mf"></div>
 				</div>
 				<div class = "container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card card-blog">
+								<div class="card-img">
+									<a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
+								</div>
+							<div class="card-body">
+								<div class="card-category-box">
+									<div class="card-category">
+										<h6 class="category">Travel</h6>
+									</div>
+								</div>
+								<h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+								<p class="card-description">
+									Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+									a pellentesque nec,
+									egestas non nisi.
+								</p>
+							</div>
+							<div class="card-footer">
+								<div class="post-date">
+									<span class="ion-ios-clock-outline"></span> 10 min
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section> -->
+		<!-- End Blog Section -->
+	
+		<!-- ======= Resume Section ======= -->
+		<section id="resume" class="services-mf pt-5 route paralax-mf bg-image" style="background-image: url(assets/images/bg/blockchain-bg.jpg)">
+			<div class="container">
+				<div class = "container" data-aos="zoom-in" data-aos-delay="250">
 					<iframe style = "width: 100%; height: 100vh"  src="https://drive.google.com/file/d/1WJ6EL8dD_yZ5EoAvkFPxTBW76wkbKE-d/preview"></iframe>
 				</div>
 			</div>
@@ -408,7 +444,7 @@
 			<!-- End Resume Section -->
 
 		<!-- ======= Contact Section ======= -->
-		<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/images/overlay-bg.jpg)">
+		<section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/images/bg/overlay-bg.jpg)">
 			<div class="overlay-mf"></div>
 			<div class="container">
 			<div class="row">
@@ -530,6 +566,7 @@
 		<script src="assets/vendor/typed.js/typed.min.js"></script>
 		<script src="assets/vendor/venobox/venobox.min.js"></script>
 		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 		
 		<!-- Initialize AOS -->
 		<script> AOS.init(); </script>
