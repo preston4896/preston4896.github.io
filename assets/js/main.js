@@ -131,4 +131,25 @@
   }, {
     offset: '80%'
   });
+
+  // // blog owlCarousel
+  // $('.owl-carousel').owlCarousel({
+  //   loop:false,
+  //   margin:25,
+  //   center:true,
+  //   stagePadding: 200,
+  //   nav: true,
+  //   responsive:{
+  //     0:{
+  //       items:1
+  //     },
+  //     600:{
+  //         items:3
+  //     },
+  //     1000:{
+  //         items:5
+  //     }
+  //   }
+  // })
+
 })(jQuery);
